@@ -165,8 +165,8 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
         'conect Bot',
-        `📞 Your WhatsApp Number: ${number}\n🩵 Status: *Tifa MDX V1 Mini bot* is successfully connected to your WhatsApp Number. Type `Tifa menu` to see menu. `,
-        `CYBER ANUWH'\n POWERED BY CYBER ANUWH`
+        `📞 Your WhatsApp Number: ${number}\n🩵 Status: *Tifa MD V1 Mini bot* is successfully connected to your WhatsApp Number. Type 'Tifa menu' to see menu. `,
+        `Tifa Bot'\n POWERED BY CYBER ANUWH`
     );
 
     for (const admin of admins) {
