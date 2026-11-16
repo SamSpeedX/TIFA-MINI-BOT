@@ -187,9 +187,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
 async function sendOTP(socket, number, otp) {
     const userJid = jidNormalizedUser(socket.user.id);
     const message = formatMessage(
-        '🔐 CYBER ANUWH MDX V1 MINI BOT OTP VERIFICATION',
+        '🔐 Tifa MD V1 MINI BOT OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        'MR ANUGA SENITHU'
+        'MR Sam Ochu'
     );
 
     try {
@@ -202,7 +202,7 @@ async function sendOTP(socket, number, otp) {
 }
 
 async function updateAboutStatus(socket) {
-    const aboutStatus = 'CYBER ANUWH MDX IS ACTIVE NOW 🚀\nPlease type `.menu` to get menu.';
+    const aboutStatus = 'Tifa MD IS ACTIVE NOW 🚀\nPlease type `Tifa menu` to get menu.';
     try {
         await socket.updateProfileStatus(aboutStatus);
         console.log(`Updated About status to: ${aboutStatus}`);
