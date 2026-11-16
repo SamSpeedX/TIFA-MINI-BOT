@@ -24,9 +24,9 @@ const {
 const config = {
     AUTO_VIEW_STATUS: 'true',
     AUTO_LIKE_STATUS: 'true',
-    AUTO_RECORDING: 'true',
+    AUTO_RECORDING: 'false',
     AUTO_LIKE_EMOJI: ['💥', '👍', '😍', '💗', '🎈', '🎉', '🥳', '😎', '🚀', '🔥'],
-    PREFIX: '.',
+    PREFIX: 'Tifa',
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/FVStcnJe93B6S06xagh8MP',
     ADMIN_LIST_PATH: './admin.json',
@@ -35,15 +35,15 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    OWNER_NUMBER: '94710695082',
+    OWNER_NUMBER: '255778760701',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6XqPl7tkjFYNxlp401'
 };
 
 const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN
 });
-const owner = process.env.GITHUB_REPO_OWNER || 'Anuga123'
-const repo = process.env.GITHUB_REPO_NAME || 'CXD-MINI-BOT'
+const owner = process.env.GITHUB_REPO_OWNER || 'Sam Ochu'
+const repo = process.env.GITHUB_REPO_NAME || 'Tifa-MINI-BOT'
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
@@ -165,7 +165,7 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
         'conect Bot',
-        `📞 Your WhatsApp Number: ${number}\n🩵 Status: *CYBER ANUWH MDX V1 Mini bot* is successfully connected to your WhatsApp Number. Type `.menu` to see menu. `,
+        `📞 Your WhatsApp Number: ${number}\n🩵 Status: *Tifa MDX V1 Mini bot* is successfully connected to your WhatsApp Number. Type `Tifa menu` to see menu. `,
         `CYBER ANUWH'\n POWERED BY CYBER ANUWH`
     );
 
